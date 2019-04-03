@@ -7,7 +7,7 @@ public class Anagramma {
 
 	List<String> listaAnagrammi=new ArrayList();
 	
-	public List<String> anagrammi(String parola){
+	public  void  ricorsivoanagrammi(String parola){
 		char lettere[];
 		lettere=parola.toCharArray();
 		
@@ -16,7 +16,8 @@ public class Anagramma {
 		
 		
 		
-		return null;
+		
+		
 		
 		
 	}

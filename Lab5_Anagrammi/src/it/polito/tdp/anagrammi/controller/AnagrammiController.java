@@ -3,13 +3,16 @@
 
 	import java.net.URL;
 	import java.util.ResourceBundle;
-	import javafx.event.ActionEvent;
+
+import it.polito.tdp.anagrammi.model.Anagramma;
+import javafx.event.ActionEvent;
 	import javafx.fxml.FXML;
 	import javafx.scene.control.Button;
 	import javafx.scene.control.TextArea;
 	import javafx.scene.control.TextField;
 
 	public class AnagrammiController {
+		private Anagramma anagramma=new Anagramma();
 
 	    @FXML
 	    private ResourceBundle resources;
@@ -42,6 +45,7 @@
 
 	    @FXML
 	    void handleCalcolaAnagrammi(ActionEvent event) {
+	    	
 
 	    }
 
@@ -53,6 +57,9 @@
 	        assert txtAnagrammiErrati != null : "fx:id=\"txtAnagrammiErrati\" was not injected: check your FXML file 'Anagrammi.fxml'.";
 	        assert btnReset != null : "fx:id=\"btnReset\" was not injected: check your FXML file 'Anagrammi.fxml'.";
 
+	    }
+	    public void setAnagramma(Anagramma anagramma) {
+	    	this.anagramma=anagramma;
 	    }
 	}
 

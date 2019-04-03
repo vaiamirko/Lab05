@@ -45,8 +45,10 @@ import javafx.event.ActionEvent;
 
 	    @FXML
 	    void handleCalcolaAnagrammi(ActionEvent event) {
-	    	
-
+	    	Anagramma ana=new Anagramma();
+	    	String parola=txtParola.getText();
+	    	txtAnagrammiCorretti.appendText(ana.Stampalista(ana.anagrammiCorretti(ana.Anagramma(parola))));
+	    	txtAnagrammiErrati.appendText(ana.Stampalista(ana.anagrammiErrati(ana.Anagramma(parola))));
 	    }
 
 	    @FXML

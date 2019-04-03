@@ -15,6 +15,7 @@ public class Main extends Application {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("Anagrammi.fxml")) ;
 			BorderPane root = (BorderPane)loader.load();
 			Scene scene = new Scene(root);
+			//seguo lo schema MVC
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			AnagrammiController controller=loader.getController();
